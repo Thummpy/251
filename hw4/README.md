@@ -6,4 +6,4 @@ Originally, servers were provisioned for me to accomplish this task, but I got s
   * started, but never finished, the mumbler app
   * reprovisioned nearly a dozen other triplets of servers on aws using various amis including versions of centos and redhat, but no matter what I do I cant seem to get around an error at the "Make World" step of installation (see makeWorld.log)
   
-I have now worked on this countless hours, scowered online resources, and searched all over for a compatible OS without success. While I am now fairly famliar with different linux distros, I have to conceed that I will not be able to get any further on this project.
+I have now worked on this countless hours, scowered online resources, and searched all over for a compatible OS without success. While I am now fairly famliar with different linux distros, I have to conceed that I will not be able to get any further on this project. Without being able to recreate the gpfs cluster I am unable to finish the mumbler app.
