@@ -1,0 +1,105 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+16/12/13 10:45:39 INFO SparkContext: Running Spark version 1.6.3
+16/12/13 10:45:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/13 10:45:39 INFO SecurityManager: Changing view acls to: ubuntu
+16/12/13 10:45:39 INFO SecurityManager: Changing modify acls to: ubuntu
+16/12/13 10:45:39 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ubuntu); users with modify permissions: Set(ubuntu)
+16/12/13 10:45:40 INFO Utils: Successfully started service 'sparkDriver' on port 40791.
+16/12/13 10:45:40 INFO Slf4jLogger: Slf4jLogger started
+16/12/13 10:45:40 INFO Remoting: Starting remoting
+16/12/13 10:45:40 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@172.31.53.161:51884]
+16/12/13 10:45:40 INFO Utils: Successfully started service 'sparkDriverActorSystem' on port 51884.
+16/12/13 10:45:40 INFO SparkEnv: Registering MapOutputTracker
+16/12/13 10:45:40 INFO SparkEnv: Registering BlockManagerMaster
+16/12/13 10:45:40 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-3d85a135-c0a0-4d57-acde-8fa4f2b4ea59
+16/12/13 10:45:40 INFO MemoryStore: MemoryStore started with capacity 511.1 MB
+16/12/13 10:45:40 INFO SparkEnv: Registering OutputCommitCoordinator
+16/12/13 10:45:40 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+16/12/13 10:45:40 INFO SparkUI: Started SparkUI at http://172.31.53.161:4040
+16/12/13 10:45:40 INFO HttpFileServer: HTTP File server directory is /tmp/spark-5dbecc28-f4aa-438e-844f-0343ac984361/httpd-426fa2f6-3b03-4851-9bea-7eec87e2b4f5
+16/12/13 10:45:40 INFO HttpServer: Starting HTTP Server
+16/12/13 10:45:41 INFO Utils: Successfully started service 'HTTP file server' on port 50275.
+16/12/13 10:45:41 INFO SparkContext: Added JAR file:/home/ubuntu/target/scala-2.10/simple-project_2.10-1.0.jar at http://172.31.53.161:50275/jars/simple-project_2.10-1.0.jar with timestamp 1481625941013
+16/12/13 10:45:41 INFO AppClient$ClientEndpoint: Connecting to master spark://172.31.53.161:7077...
+16/12/13 10:45:41 INFO SparkDeploySchedulerBackend: Connected to Spark cluster with app ID app-20161213104541-0002
+16/12/13 10:45:41 INFO AppClient$ClientEndpoint: Executor added: app-20161213104541-0002/0 on worker-20161213104214-172.31.53.160-50406 (172.31.53.160:50406) with 2 cores
+16/12/13 10:45:41 INFO SparkDeploySchedulerBackend: Granted executor ID app-20161213104541-0002/0 on hostPort 172.31.53.160:50406 with 2 cores, 1024.0 MB RAM
+16/12/13 10:45:41 INFO AppClient$ClientEndpoint: Executor added: app-20161213104541-0002/1 on worker-20161213104214-172.31.50.25-43720 (172.31.50.25:43720) with 2 cores
+16/12/13 10:45:41 INFO SparkDeploySchedulerBackend: Granted executor ID app-20161213104541-0002/1 on hostPort 172.31.50.25:43720 with 2 cores, 1024.0 MB RAM
+16/12/13 10:45:41 INFO AppClient$ClientEndpoint: Executor added: app-20161213104541-0002/2 on worker-20161213104214-172.31.53.161-34437 (172.31.53.161:34437) with 2 cores
+16/12/13 10:45:41 INFO SparkDeploySchedulerBackend: Granted executor ID app-20161213104541-0002/2 on hostPort 172.31.53.161:34437 with 2 cores, 1024.0 MB RAM
+16/12/13 10:45:41 INFO AppClient$ClientEndpoint: Executor updated: app-20161213104541-0002/1 is now RUNNING
+16/12/13 10:45:41 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40574.
+16/12/13 10:45:41 INFO AppClient$ClientEndpoint: Executor updated: app-20161213104541-0002/2 is now RUNNING
+16/12/13 10:45:41 INFO AppClient$ClientEndpoint: Executor updated: app-20161213104541-0002/0 is now RUNNING
+16/12/13 10:45:41 INFO NettyBlockTransferService: Server created on 40574
+16/12/13 10:45:41 INFO BlockManagerMaster: Trying to register BlockManager
+16/12/13 10:45:41 INFO BlockManagerMasterEndpoint: Registering block manager 172.31.53.161:40574 with 511.1 MB RAM, BlockManagerId(driver, 172.31.53.161, 40574)
+16/12/13 10:45:41 INFO BlockManagerMaster: Registered BlockManager
+16/12/13 10:45:41 INFO SparkDeploySchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+16/12/13 10:45:42 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 127.4 KB, free 511.0 MB)
+16/12/13 10:45:42 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 13.9 KB, free 511.0 MB)
+16/12/13 10:45:42 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.31.53.161:40574 (size: 13.9 KB, free: 511.1 MB)
+16/12/13 10:45:42 INFO SparkContext: Created broadcast 0 from textFile at SimpleApp.scala:11
+16/12/13 10:45:42 INFO FileInputFormat: Total input paths to process : 1
+16/12/13 10:45:42 INFO SparkContext: Starting job: count at SimpleApp.scala:12
+16/12/13 10:45:42 INFO DAGScheduler: Got job 0 (count at SimpleApp.scala:12) with 2 output partitions
+16/12/13 10:45:42 INFO DAGScheduler: Final stage: ResultStage 0 (count at SimpleApp.scala:12)
+16/12/13 10:45:42 INFO DAGScheduler: Parents of final stage: List()
+16/12/13 10:45:42 INFO DAGScheduler: Missing parents: List()
+16/12/13 10:45:42 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at filter at SimpleApp.scala:12), which has no missing parents
+16/12/13 10:45:42 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.2 KB, free 511.0 MB)
+16/12/13 10:45:42 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 1913.0 B, free 511.0 MB)
+16/12/13 10:45:42 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.31.53.161:40574 (size: 1913.0 B, free: 511.1 MB)
+16/12/13 10:45:42 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+16/12/13 10:45:42 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at filter at SimpleApp.scala:12)
+16/12/13 10:45:42 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks
+16/12/13 10:45:44 INFO SparkDeploySchedulerBackend: Registered executor NettyRpcEndpointRef(null) (spark3:40224) with ID 2
+16/12/13 10:45:44 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, spark3, partition 0,PROCESS_LOCAL, 2202 bytes)
+16/12/13 10:45:44 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, spark3, partition 1,PROCESS_LOCAL, 2202 bytes)
+16/12/13 10:45:44 INFO BlockManagerMasterEndpoint: Registering block manager spark3:54993 with 511.1 MB RAM, BlockManagerId(2, spark3, 54993)
+16/12/13 10:45:44 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on spark3:54993 (size: 1913.0 B, free: 511.1 MB)
+16/12/13 10:45:44 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on spark3:54993 (size: 13.9 KB, free: 511.1 MB)
+16/12/13 10:45:45 INFO BlockManagerInfo: Added rdd_1_0 in memory on spark3:54993 (size: 5.4 KB, free: 511.1 MB)
+16/12/13 10:45:45 INFO BlockManagerInfo: Added rdd_1_1 in memory on spark3:54993 (size: 4.7 KB, free: 511.1 MB)
+16/12/13 10:45:45 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 846 ms on spark3 (1/2)
+16/12/13 10:45:45 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 897 ms on spark3 (2/2)
+16/12/13 10:45:45 INFO DAGScheduler: ResultStage 0 (count at SimpleApp.scala:12) finished in 2.363 s
+16/12/13 10:45:45 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+16/12/13 10:45:45 INFO DAGScheduler: Job 0 finished: count at SimpleApp.scala:12, took 2.509698 s
+16/12/13 10:45:45 INFO SparkContext: Starting job: count at SimpleApp.scala:13
+16/12/13 10:45:45 INFO DAGScheduler: Got job 1 (count at SimpleApp.scala:13) with 2 output partitions
+16/12/13 10:45:45 INFO DAGScheduler: Final stage: ResultStage 1 (count at SimpleApp.scala:13)
+16/12/13 10:45:45 INFO DAGScheduler: Parents of final stage: List()
+16/12/13 10:45:45 INFO DAGScheduler: Missing parents: List()
+16/12/13 10:45:45 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[3] at filter at SimpleApp.scala:13), which has no missing parents
+16/12/13 10:45:45 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 3.2 KB, free 511.0 MB)
+16/12/13 10:45:45 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 1915.0 B, free 511.0 MB)
+16/12/13 10:45:45 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 172.31.53.161:40574 (size: 1915.0 B, free: 511.1 MB)
+16/12/13 10:45:45 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+16/12/13 10:45:45 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[3] at filter at SimpleApp.scala:13)
+16/12/13 10:45:45 INFO TaskSchedulerImpl: Adding task set 1.0 with 2 tasks
+16/12/13 10:45:45 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2, spark3, partition 0,PROCESS_LOCAL, 2202 bytes)
+16/12/13 10:45:45 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3, spark3, partition 1,PROCESS_LOCAL, 2202 bytes)
+16/12/13 10:45:45 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on spark3:54993 (size: 1915.0 B, free: 511.1 MB)
+16/12/13 10:45:45 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 45 ms on spark3 (1/2)
+16/12/13 10:45:45 INFO DAGScheduler: ResultStage 1 (count at SimpleApp.scala:13) finished in 0.039 s
+16/12/13 10:45:45 INFO DAGScheduler: Job 1 finished: count at SimpleApp.scala:13, took 0.056426 s
++++++++++++ Lines with a: 58, Lines with b: 26 ++++++++++
+16/12/13 10:45:45 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 45 ms on spark3 (2/2)
+16/12/13 10:45:45 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+16/12/13 10:45:45 INFO SparkContext: Invoking stop() from shutdown hook
+16/12/13 10:45:45 INFO SparkUI: Stopped Spark web UI at http://172.31.53.161:4040
+16/12/13 10:45:45 INFO SparkDeploySchedulerBackend: Shutting down all executors
+16/12/13 10:45:45 INFO SparkDeploySchedulerBackend: Asking each executor to shut down
+16/12/13 10:45:45 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+16/12/13 10:45:45 INFO MemoryStore: MemoryStore cleared
+16/12/13 10:45:45 INFO BlockManager: BlockManager stopped
+16/12/13 10:45:45 INFO BlockManagerMaster: BlockManagerMaster stopped
+16/12/13 10:45:45 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+16/12/13 10:45:45 INFO RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+16/12/13 10:45:45 INFO RemoteActorRefProvider$RemotingTerminator: Remote daemon shut down; proceeding with flushing remote transports.
+16/12/13 10:45:45 INFO SparkContext: Successfully stopped SparkContext
+16/12/13 10:45:45 INFO ShutdownHookManager: Shutdown hook called
+16/12/13 10:45:45 INFO ShutdownHookManager: Deleting directory /tmp/spark-5dbecc28-f4aa-438e-844f-0343ac984361
+16/12/13 10:45:45 INFO ShutdownHookManager: Deleting directory /tmp/spark-5dbecc28-f4aa-438e-844f-0343ac984361/httpd-426fa2f6-3b03-4851-9bea-7eec87e2b4f5

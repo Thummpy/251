@@ -1,0 +1,55 @@
+Spark Command: /usr/lib/jvm/java-8-oracle/bin/java -cp /usr/local/spark/conf/:/usr/local/spark/lib/spark-assembly-1.6.3-hadoop2.6.0.jar:/usr/local/spark/lib/datanucleus-api-jdo-3.2.6.jar:/usr/local/spark/lib/datanucleus-core-3.2.10.jar:/usr/local/spark/lib/datanucleus-rdbms-3.2.9.jar -Xms1g -Xmx1g org.apache.spark.deploy.master.Master --ip 172.31.53.161 --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+16/12/13 10:42:11 INFO Master: Registered signal handlers for [TERM, HUP, INT]
+16/12/13 10:42:11 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/13 10:42:11 INFO SecurityManager: Changing view acls to: ubuntu
+16/12/13 10:42:11 INFO SecurityManager: Changing modify acls to: ubuntu
+16/12/13 10:42:11 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ubuntu); users with modify permissions: Set(ubuntu)
+16/12/13 10:42:11 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+16/12/13 10:42:12 INFO Master: Starting Spark master at spark://172.31.53.161:7077
+16/12/13 10:42:12 INFO Master: Running Spark version 1.6.3
+16/12/13 10:42:12 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+16/12/13 10:42:12 INFO MasterWebUI: Started MasterWebUI at http://172.31.53.161:8080
+16/12/13 10:42:12 INFO Utils: Successfully started service on port 6066.
+16/12/13 10:42:12 INFO StandaloneRestServer: Started REST server for submitting applications on port 6066
+16/12/13 10:42:12 INFO Master: I have been elected leader! New state: ALIVE
+16/12/13 10:42:14 INFO Master: Registering worker 172.31.53.160:50406 with 2 cores, 2.9 GB RAM
+16/12/13 10:42:14 INFO Master: Registering worker 172.31.53.161:34437 with 2 cores, 2.9 GB RAM
+16/12/13 10:42:14 INFO Master: Registering worker 172.31.50.25:43720 with 2 cores, 2.9 GB RAM
+16/12/13 10:43:40 INFO Master: Registering app Simple Application
+16/12/13 10:43:40 INFO Master: Registered app Simple Application with ID app-20161213104340-0000
+16/12/13 10:43:40 INFO Master: Launching executor app-20161213104340-0000/0 on worker worker-20161213104214-172.31.53.160-50406
+16/12/13 10:43:40 INFO Master: Launching executor app-20161213104340-0000/1 on worker worker-20161213104214-172.31.50.25-43720
+16/12/13 10:43:40 INFO Master: Launching executor app-20161213104340-0000/2 on worker worker-20161213104214-172.31.53.161-34437
+16/12/13 10:43:45 INFO Master: Received unregister request from application app-20161213104340-0000
+16/12/13 10:43:45 INFO Master: Removing app app-20161213104340-0000
+16/12/13 10:43:45 INFO Master: spark3:53142 got disassociated, removing it.
+16/12/13 10:43:45 INFO Master: 172.31.53.161:33125 got disassociated, removing it.
+16/12/13 10:43:45 WARN Master: Got status update for unknown executor app-20161213104340-0000/0
+16/12/13 10:43:45 WARN Master: Got status update for unknown executor app-20161213104340-0000/1
+16/12/13 10:43:45 WARN Master: Got status update for unknown executor app-20161213104340-0000/2
+16/12/13 10:45:00 INFO Master: Registering app Simple Application
+16/12/13 10:45:00 INFO Master: Registered app Simple Application with ID app-20161213104500-0001
+16/12/13 10:45:00 INFO Master: Launching executor app-20161213104500-0001/0 on worker worker-20161213104214-172.31.53.160-50406
+16/12/13 10:45:00 INFO Master: Launching executor app-20161213104500-0001/1 on worker worker-20161213104214-172.31.50.25-43720
+16/12/13 10:45:00 INFO Master: Launching executor app-20161213104500-0001/2 on worker worker-20161213104214-172.31.53.161-34437
+16/12/13 10:45:04 INFO Master: Received unregister request from application app-20161213104500-0001
+16/12/13 10:45:04 INFO Master: Removing app app-20161213104500-0001
+16/12/13 10:45:04 INFO Master: spark3:53150 got disassociated, removing it.
+16/12/13 10:45:04 INFO Master: 172.31.53.161:53681 got disassociated, removing it.
+16/12/13 10:45:04 WARN Master: Got status update for unknown executor app-20161213104500-0001/1
+16/12/13 10:45:04 WARN Master: Got status update for unknown executor app-20161213104500-0001/0
+16/12/13 10:45:04 WARN Master: Got status update for unknown executor app-20161213104500-0001/2
+16/12/13 10:45:41 INFO Master: Registering app Simple Application
+16/12/13 10:45:41 INFO Master: Registered app Simple Application with ID app-20161213104541-0002
+16/12/13 10:45:41 INFO Master: Launching executor app-20161213104541-0002/0 on worker worker-20161213104214-172.31.53.160-50406
+16/12/13 10:45:41 INFO Master: Launching executor app-20161213104541-0002/1 on worker worker-20161213104214-172.31.50.25-43720
+16/12/13 10:45:41 INFO Master: Launching executor app-20161213104541-0002/2 on worker worker-20161213104214-172.31.53.161-34437
+16/12/13 10:45:45 INFO Master: Received unregister request from application app-20161213104541-0002
+16/12/13 10:45:45 INFO Master: Removing app app-20161213104541-0002
+16/12/13 10:45:45 WARN Master: Got status update for unknown executor app-20161213104541-0002/0
+16/12/13 10:45:45 INFO Master: spark3:53158 got disassociated, removing it.
+16/12/13 10:45:45 INFO Master: 172.31.53.161:40791 got disassociated, removing it.
+16/12/13 10:45:45 WARN Master: Got status update for unknown executor app-20161213104541-0002/1
+16/12/13 10:45:45 WARN Master: Got status update for unknown executor app-20161213104541-0002/2

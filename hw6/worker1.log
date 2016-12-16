@@ -1,0 +1,49 @@
+Spark Command: /usr/lib/jvm/java-8-oracle/jre/bin/java -cp /usr/local/spark/conf/:/usr/local/spark/lib/spark-assembly-1.6.3-hadoop2.6.0.jar:/usr/local/spark/lib/datanucleus-api-jdo-3.2.6.jar:/usr/local/spark/lib/datanucleus-core-3.2.10.jar:/usr/local/spark/lib/datanucleus-rdbms-3.2.9.jar -Xms1g -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://172.31.53.161:7077
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+16/12/13 10:42:13 INFO Worker: Registered signal handlers for [TERM, HUP, INT]
+16/12/13 10:42:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/12/13 10:42:13 INFO SecurityManager: Changing view acls to: ubuntu
+16/12/13 10:42:13 INFO SecurityManager: Changing modify acls to: ubuntu
+16/12/13 10:42:13 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ubuntu); users with modify permissions: Set(ubuntu)
+16/12/13 10:42:14 INFO Utils: Successfully started service 'sparkWorker' on port 34437.
+16/12/13 10:42:14 INFO Worker: Starting Spark worker 172.31.53.161:34437 with 2 cores, 2.9 GB RAM
+16/12/13 10:42:14 INFO Worker: Running Spark version 1.6.3
+16/12/13 10:42:14 INFO Worker: Spark home: /usr/local/spark
+16/12/13 10:42:14 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+16/12/13 10:42:14 INFO WorkerWebUI: Started WorkerWebUI at http://172.31.53.161:8081
+16/12/13 10:42:14 INFO Worker: Connecting to master 172.31.53.161:7077...
+16/12/13 10:42:14 INFO Worker: Successfully registered with master spark://172.31.53.161:7077
+16/12/13 10:43:40 INFO Worker: Asked to launch executor app-20161213104340-0000/2 for Simple Application
+16/12/13 10:43:40 INFO SecurityManager: Changing view acls to: ubuntu
+16/12/13 10:43:40 INFO SecurityManager: Changing modify acls to: ubuntu
+16/12/13 10:43:40 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ubuntu); users with modify permissions: Set(ubuntu)
+16/12/13 10:43:40 INFO ExecutorRunner: Launch command: "/usr/lib/jvm/java-8-oracle/jre/bin/java" "-cp" "/usr/local/spark/conf/:/usr/local/spark/lib/spark-assembly-1.6.3-hadoop2.6.0.jar:/usr/local/spark/lib/datanucleus-api-jdo-3.2.6.jar:/usr/local/spark/lib/datanucleus-core-3.2.10.jar:/usr/local/spark/lib/datanucleus-rdbms-3.2.9.jar" "-Xms1024M" "-Xmx1024M" "-Dspark.driver.port=33125" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@172.31.53.161:33125" "--executor-id" "2" "--hostname" "172.31.53.161" "--cores" "2" "--app-id" "app-20161213104340-0000" "--worker-url" "spark://Worker@172.31.53.161:34437"
+16/12/13 10:43:45 INFO Worker: Asked to kill executor app-20161213104340-0000/2
+16/12/13 10:43:45 INFO ExecutorRunner: Runner thread for executor app-20161213104340-0000/2 interrupted
+16/12/13 10:43:45 INFO ExecutorRunner: Killing process!
+16/12/13 10:43:45 INFO Worker: Executor app-20161213104340-0000/2 finished with state KILLED exitStatus 0
+16/12/13 10:43:45 INFO Worker: Cleaning up local directories for application app-20161213104340-0000
+16/12/13 10:43:45 INFO ExternalShuffleBlockResolver: Application app-20161213104340-0000 removed, cleanupLocalDirs = true
+16/12/13 10:45:00 INFO Worker: Asked to launch executor app-20161213104500-0001/2 for Simple Application
+16/12/13 10:45:00 INFO SecurityManager: Changing view acls to: ubuntu
+16/12/13 10:45:00 INFO SecurityManager: Changing modify acls to: ubuntu
+16/12/13 10:45:00 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ubuntu); users with modify permissions: Set(ubuntu)
+16/12/13 10:45:00 INFO ExecutorRunner: Launch command: "/usr/lib/jvm/java-8-oracle/jre/bin/java" "-cp" "/usr/local/spark/conf/:/usr/local/spark/lib/spark-assembly-1.6.3-hadoop2.6.0.jar:/usr/local/spark/lib/datanucleus-api-jdo-3.2.6.jar:/usr/local/spark/lib/datanucleus-core-3.2.10.jar:/usr/local/spark/lib/datanucleus-rdbms-3.2.9.jar" "-Xms1024M" "-Xmx1024M" "-Dspark.driver.port=53681" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@172.31.53.161:53681" "--executor-id" "2" "--hostname" "172.31.53.161" "--cores" "2" "--app-id" "app-20161213104500-0001" "--worker-url" "spark://Worker@172.31.53.161:34437"
+16/12/13 10:45:04 INFO Worker: Asked to kill executor app-20161213104500-0001/2
+16/12/13 10:45:04 INFO ExecutorRunner: Runner thread for executor app-20161213104500-0001/2 interrupted
+16/12/13 10:45:04 INFO ExecutorRunner: Killing process!
+16/12/13 10:45:04 INFO Worker: Executor app-20161213104500-0001/2 finished with state KILLED exitStatus 143
+16/12/13 10:45:04 INFO Worker: Cleaning up local directories for application app-20161213104500-0001
+16/12/13 10:45:04 INFO ExternalShuffleBlockResolver: Application app-20161213104500-0001 removed, cleanupLocalDirs = true
+16/12/13 10:45:41 INFO Worker: Asked to launch executor app-20161213104541-0002/2 for Simple Application
+16/12/13 10:45:41 INFO SecurityManager: Changing view acls to: ubuntu
+16/12/13 10:45:41 INFO SecurityManager: Changing modify acls to: ubuntu
+16/12/13 10:45:41 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ubuntu); users with modify permissions: Set(ubuntu)
+16/12/13 10:45:41 INFO ExecutorRunner: Launch command: "/usr/lib/jvm/java-8-oracle/jre/bin/java" "-cp" "/usr/local/spark/conf/:/usr/local/spark/lib/spark-assembly-1.6.3-hadoop2.6.0.jar:/usr/local/spark/lib/datanucleus-api-jdo-3.2.6.jar:/usr/local/spark/lib/datanucleus-core-3.2.10.jar:/usr/local/spark/lib/datanucleus-rdbms-3.2.9.jar" "-Xms1024M" "-Xmx1024M" "-Dspark.driver.port=40791" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@172.31.53.161:40791" "--executor-id" "2" "--hostname" "172.31.53.161" "--cores" "2" "--app-id" "app-20161213104541-0002" "--worker-url" "spark://Worker@172.31.53.161:34437"
+16/12/13 10:45:45 INFO Worker: Asked to kill executor app-20161213104541-0002/2
+16/12/13 10:45:45 INFO ExecutorRunner: Runner thread for executor app-20161213104541-0002/2 interrupted
+16/12/13 10:45:45 INFO ExecutorRunner: Killing process!
+16/12/13 10:45:45 INFO Worker: Executor app-20161213104541-0002/2 finished with state KILLED exitStatus 143
+16/12/13 10:45:45 INFO Worker: Cleaning up local directories for application app-20161213104541-0002
+16/12/13 10:45:45 INFO ExternalShuffleBlockResolver: Application app-20161213104541-0002 removed, cleanupLocalDirs = true
