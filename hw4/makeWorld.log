@@ -1,0 +1,206 @@
+Verifying that tools to build the portability layer exist....
+cpp present
+gcc present
+g++ present
+ld present
+cd /usr/lpp/mmfs/src/config; /usr/bin/cpp -P def.mk.proto > ./def.mk; exit $? || exit 1
+rm -rf /usr/lpp/mmfs/src/include /usr/lpp/mmfs/src/bin /usr/lpp/mmfs/src/lib
+mkdir /usr/lpp/mmfs/src/include /usr/lpp/mmfs/src/bin /usr/lpp/mmfs/src/lib
+rm -f //usr/lpp/mmfs/src/gpl-linux/gpl_kernel.tmp.ver
+cleaning (/usr/lpp/mmfs/src/ibm-kxi)
+make[1]: Entering directory `/usr/lpp/mmfs/src/ibm-kxi'
+rm -f ibm_kxi.trclst
+rm -f  install.he; \
+ for i in cxiTypes.h cxiSystem.h cxi2gpfs.h cxiVFSStats.h cxiCred.h cxiIOBuffer.h cxiSharedSeg.h cxiMode.h Trace.h cxiMmap.h cxiAtomic.h cxiTSFattr.h cxiAclUser.h cxiLinkList.h cxiDmapi.h Dynassert.h LockNames.h lxtrace.h cxiGcryptoDefs.h DirIds.h; do \
+    (set -x; rm -f -r /usr/lpp/mmfs/src/include/cxi/$i) done 
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiTypes.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiSystem.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxi2gpfs.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiVFSStats.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiCred.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiIOBuffer.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiSharedSeg.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiMode.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/Trace.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiMmap.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiAtomic.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiTSFattr.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiAclUser.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiLinkList.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiDmapi.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/Dynassert.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/LockNames.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/lxtrace.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/cxiGcryptoDefs.h
++ rm -f -r /usr/lpp/mmfs/src/include/cxi/DirIds.h
+make[1]: Leaving directory `/usr/lpp/mmfs/src/ibm-kxi'
+cleaning (/usr/lpp/mmfs/src/ibm-linux)
+make[1]: Entering directory `/usr/lpp/mmfs/src/ibm-linux'
+rm -f install.he; \
+ for i in cxiTypes-plat.h cxiSystem-plat.h cxiIOBuffer-plat.h cxiSharedSeg-plat.h cxiMode-plat.h Trace-plat.h cxiAtomic-plat.h cxiMmap-plat.h cxiVFSStats-plat.h cxiCred-plat.h cxiDmapi-plat.h; do \
+                (set -x; rm -rf /usr/lpp/mmfs/src/include/cxi/$i) done
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiTypes-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiSystem-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiIOBuffer-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiSharedSeg-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiMode-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/Trace-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiAtomic-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiMmap-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiVFSStats-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiCred-plat.h
++ rm -rf /usr/lpp/mmfs/src/include/cxi/cxiDmapi-plat.h
+make[1]: Leaving directory `/usr/lpp/mmfs/src/ibm-linux'
+cleaning (/usr/lpp/mmfs/src/gpl-linux)
+make[1]: Entering directory `/usr/lpp/mmfs/src/gpl-linux'
+Pre-kbuild step 1...
+/usr/bin/make -C /usr/src/kernels/3.10.0-514.2.2.el7.x86_64 M=/usr/lpp/mmfs/src/gpl-linux clean
+make[2]: Entering directory `/usr/src/kernels/3.10.0-514.2.2.el7.x86_64'
+  CLEAN   /usr/lpp/mmfs/src/gpl-linux/.tmp_versions
+make[2]: Leaving directory `/usr/src/kernels/3.10.0-514.2.2.el7.x86_64'
+rm -f -f /lib/modules/`cat //usr/lpp/mmfs/src/gpl-linux/gpl_kernel.tmp.ver`/extra/tracedev.ko
+rm -f -f /lib/modules/`cat //usr/lpp/mmfs/src/gpl-linux/gpl_kernel.tmp.ver`/extra/mmfslinux.ko
+rm -f -f /lib/modules/`cat //usr/lpp/mmfs/src/gpl-linux/gpl_kernel.tmp.ver`/extra/mmfs26.ko
+rm -f -f /usr/lpp/mmfs/src/../bin/lxtrace-`cat //usr/lpp/mmfs/src/gpl-linux/gpl_kernel.tmp.ver`
+rm -f -f /usr/lpp/mmfs/src/../bin/kdump-`cat //usr/lpp/mmfs/src/gpl-linux/gpl_kernel.tmp.ver`
+rm -f -f *.o .depends .*.cmd *.ko *.a *.mod.c core *_shipped *map *mod.c.saved *.symvers *.ko.ver ./*.ver install.he
+rm -f -rf .tmp_versions kdump-kern-dwarfs.c
+rm -f -f gpl-linux.trclst kdump lxtrace
+rm -f -rf usr
+make[1]: Leaving directory `/usr/lpp/mmfs/src/gpl-linux'
+for i in ibm-kxi ibm-linux gpl-linux ; do \
+(cd $i; echo  "installing header files" "(`pwd`)"; \
+/usr/bin/make DESTDIR=/usr/lpp/mmfs/src  Headers; \
+exit $?) || exit 1; \
+done
+installing header files (/usr/lpp/mmfs/src/ibm-kxi)
+make[1]: Entering directory `/usr/lpp/mmfs/src/ibm-kxi'
+Making directory /usr/lpp/mmfs/src/include/cxi
++ /usr/bin/install cxiTypes.h /usr/lpp/mmfs/src/include/cxi/cxiTypes.h
++ /usr/bin/install cxiSystem.h /usr/lpp/mmfs/src/include/cxi/cxiSystem.h
++ /usr/bin/install cxi2gpfs.h /usr/lpp/mmfs/src/include/cxi/cxi2gpfs.h
++ /usr/bin/install cxiVFSStats.h /usr/lpp/mmfs/src/include/cxi/cxiVFSStats.h
++ /usr/bin/install cxiCred.h /usr/lpp/mmfs/src/include/cxi/cxiCred.h
++ /usr/bin/install cxiIOBuffer.h /usr/lpp/mmfs/src/include/cxi/cxiIOBuffer.h
++ /usr/bin/install cxiSharedSeg.h /usr/lpp/mmfs/src/include/cxi/cxiSharedSeg.h
++ /usr/bin/install cxiMode.h /usr/lpp/mmfs/src/include/cxi/cxiMode.h
++ /usr/bin/install Trace.h /usr/lpp/mmfs/src/include/cxi/Trace.h
++ /usr/bin/install cxiMmap.h /usr/lpp/mmfs/src/include/cxi/cxiMmap.h
++ /usr/bin/install cxiAtomic.h /usr/lpp/mmfs/src/include/cxi/cxiAtomic.h
++ /usr/bin/install cxiTSFattr.h /usr/lpp/mmfs/src/include/cxi/cxiTSFattr.h
++ /usr/bin/install cxiAclUser.h /usr/lpp/mmfs/src/include/cxi/cxiAclUser.h
++ /usr/bin/install cxiLinkList.h /usr/lpp/mmfs/src/include/cxi/cxiLinkList.h
++ /usr/bin/install cxiDmapi.h /usr/lpp/mmfs/src/include/cxi/cxiDmapi.h
++ /usr/bin/install Dynassert.h /usr/lpp/mmfs/src/include/cxi/Dynassert.h
++ /usr/bin/install LockNames.h /usr/lpp/mmfs/src/include/cxi/LockNames.h
++ /usr/bin/install lxtrace.h /usr/lpp/mmfs/src/include/cxi/lxtrace.h
++ /usr/bin/install cxiGcryptoDefs.h /usr/lpp/mmfs/src/include/cxi/cxiGcryptoDefs.h
++ /usr/bin/install DirIds.h /usr/lpp/mmfs/src/include/cxi/DirIds.h
+touch install.he
+make[1]: Leaving directory `/usr/lpp/mmfs/src/ibm-kxi'
+installing header files (/usr/lpp/mmfs/src/ibm-linux)
+make[1]: Entering directory `/usr/lpp/mmfs/src/ibm-linux'
++ /usr/bin/install cxiTypes-plat.h /usr/lpp/mmfs/src/include/cxi/cxiTypes-plat.h
++ /usr/bin/install cxiSystem-plat.h /usr/lpp/mmfs/src/include/cxi/cxiSystem-plat.h
++ /usr/bin/install cxiIOBuffer-plat.h /usr/lpp/mmfs/src/include/cxi/cxiIOBuffer-plat.h
++ /usr/bin/install cxiSharedSeg-plat.h /usr/lpp/mmfs/src/include/cxi/cxiSharedSeg-plat.h
++ /usr/bin/install cxiMode-plat.h /usr/lpp/mmfs/src/include/cxi/cxiMode-plat.h
++ /usr/bin/install Trace-plat.h /usr/lpp/mmfs/src/include/cxi/Trace-plat.h
++ /usr/bin/install cxiAtomic-plat.h /usr/lpp/mmfs/src/include/cxi/cxiAtomic-plat.h
++ /usr/bin/install cxiMmap-plat.h /usr/lpp/mmfs/src/include/cxi/cxiMmap-plat.h
++ /usr/bin/install cxiVFSStats-plat.h /usr/lpp/mmfs/src/include/cxi/cxiVFSStats-plat.h
++ /usr/bin/install cxiCred-plat.h /usr/lpp/mmfs/src/include/cxi/cxiCred-plat.h
++ /usr/bin/install cxiDmapi-plat.h /usr/lpp/mmfs/src/include/cxi/cxiDmapi-plat.h
+touch install.he
+make[1]: Leaving directory `/usr/lpp/mmfs/src/ibm-linux'
+installing header files (/usr/lpp/mmfs/src/gpl-linux)
+make[1]: Entering directory `/usr/lpp/mmfs/src/gpl-linux'
+Making directory /usr/lpp/mmfs/src/include/gpl-linux
++ /usr/bin/install Shark-gpl.h /usr/lpp/mmfs/src/include/gpl-linux/Shark-gpl.h
++ /usr/bin/install prelinux.h /usr/lpp/mmfs/src/include/gpl-linux/prelinux.h
++ /usr/bin/install postlinux.h /usr/lpp/mmfs/src/include/gpl-linux/postlinux.h
++ /usr/bin/install linux2gpfs.h /usr/lpp/mmfs/src/include/gpl-linux/linux2gpfs.h
++ /usr/bin/install verdep.h /usr/lpp/mmfs/src/include/gpl-linux/verdep.h
++ /usr/bin/install Logger-gpl.h /usr/lpp/mmfs/src/include/gpl-linux/Logger-gpl.h
++ /usr/bin/install arch-gpl.h /usr/lpp/mmfs/src/include/gpl-linux/arch-gpl.h
++ /usr/bin/install oplock.h /usr/lpp/mmfs/src/include/gpl-linux/oplock.h
+touch install.he
+make[1]: Leaving directory `/usr/lpp/mmfs/src/gpl-linux'
+make[1]: Entering directory `/usr/lpp/mmfs/src/gpl-linux'
+Pre-kbuild step 1...
+Pre-kbuild step 2...
+touch install.he
+Invoking Kbuild...
+/usr/bin/make -C /usr/src/kernels/3.10.0-514.2.2.el7.x86_64 ARCH=x86_64 M=/usr/lpp/mmfs/src/gpl-linux CONFIGDIR=/usr/lpp/mmfs/src/config  ; \
+if [ $? -ne 0 ]; then \
+	exit 1;\
+fi 
+make[2]: Entering directory `/usr/src/kernels/3.10.0-514.2.2.el7.x86_64'
+  LD      /usr/lpp/mmfs/src/gpl-linux/built-in.o
+  CC [M]  /usr/lpp/mmfs/src/gpl-linux/kdump-kern.o
+  CC [M]  /usr/lpp/mmfs/src/gpl-linux/kdump-stub.o
+  CC [M]  /usr/lpp/mmfs/src/gpl-linux/mmfsmod.o
+  CC [M]  /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.o
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:59:0,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:68:
+/usr/lpp/mmfs/src/gpl-linux/kx.c: In function ‘get_vfsmount_from_fd’:
+/usr/lpp/mmfs/src/gpl-linux/kx.c:3392:16: error: ‘struct file’ has no member named ‘f_vfsmnt’
+     mnt = filep->f_vfsmnt;
+                ^
+/usr/lpp/mmfs/src/gpl-linux/kx.c: In function ‘rename_by_fh’:
+/usr/lpp/mmfs/src/gpl-linux/kx.c:4348:3: error: too few arguments to function ‘vfs_rename’
+   error = VFS_RENAME(mnt, old_dentry->d_inode, olddentry,
+   ^
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50:0,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:58,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:68:
+include/linux/fs.h:1616:12: note: declared here
+ extern int vfs_rename(struct inode *, struct dentry *, struct inode *, struct dentry *, struct inode **, unsigned int);
+            ^
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:64:0,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:68:
+/usr/lpp/mmfs/src/gpl-linux/file.c: In function ‘__gpfs_f_set_lease’:
+/usr/lpp/mmfs/src/gpl-linux/file.c:1254:3: error: too few arguments to function ‘generic_setlease’
+   rc = POSIX_SETLEASE(fP, arg, flPP);
+   ^
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50:0,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:58,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:68:
+include/linux/fs.h:1114:12: note: declared here
+ extern int generic_setlease(struct file *, long, struct file_lock **, void **priv);
+            ^
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:66:0,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:68:
+/usr/lpp/mmfs/src/gpl-linux/cxiSystem.c: In function ‘cxiNFSError’:
+/usr/lpp/mmfs/src/gpl-linux/cxiSystem.c:1570:10: warning: type defaults to ‘int’ in declaration of ‘last_nfs_pid’ [-Wimplicit-int]
+   static last_nfs_pid = 0;
+          ^
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:71:0,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:68:
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c: At top level:
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:344:3: warning: initialization from incompatible pointer type [enabled by default]
+   setlease:  gpfs_f_set_lease,
+   ^
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:344:3: warning: (near initialization for ‘gpfs_fops.<anonymous>.setlease’) [enabled by default]
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:424:3: warning: initialization from incompatible pointer type [enabled by default]
+   setlease:  gpfs_f_set_lease,
+   ^
+/usr/lpp/mmfs/src/gpl-linux/opsdeclare.c:424:3: warning: (near initialization for ‘gpfs_fops_no_sendfile.<anonymous>.setlease’) [enabled by default]
+In file included from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:76:0,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:68:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c: In function ‘cxiCacheRename’:
+/usr/lpp/mmfs/src/gpl-linux/cxiCache.c:1976:3: error: too few arguments to function ‘vfs_rename’
+   rc = VFS_RENAME(mntP, sddP->d_inode, sdP, tddP->d_inode, tdP);
+   ^
+In file included from /usr/lpp/mmfs/src/gpl-linux/dir.c:50:0,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles.c:58,
+                 from /usr/lpp/mmfs/src/gpl-linux/cfiles_cust.c:68:
+include/linux/fs.h:1616:12: note: declared here
+ extern int vfs_rename(struct inode *, struct dentry *, struct inode *, struct dentry *, struct inode **, unsigned int);
+            ^
+make[3]: *** [/usr/lpp/mmfs/src/gpl-linux/cfiles_cust.o] Error 1
+make[2]: *** [_module_/usr/lpp/mmfs/src/gpl-linux] Error 2
+make[2]: Leaving directory `/usr/src/kernels/3.10.0-514.2.2.el7.x86_64'
+make[1]: *** [modules] Error 1
+make[1]: Leaving directory `/usr/lpp/mmfs/src/gpl-linux'
+make: *** [Modules] Error 1
